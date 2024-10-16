@@ -1,9 +1,7 @@
 
 const fibonacci = (nombre) => {
   const tableau = [0, 1]
-  if (nombre === 1)  {
-	return tableau
-  } else if (nombre > 1) {
+if (nombre > 1) {
 	// nombre 2 doit retourner [0, 1, 1]
 	// const nombre1 = tableau[1]
 	// const nombre2 = tableau[0]
@@ -14,16 +12,10 @@ const fibonacci = (nombre) => {
 		let nombre2 = tableau[i-2]
 
 		tableau.push(nombre1 + nombre2)
-
 	}
-
-	return tableau
   }
-
-
+  return tableau
 } 
-
-
 
 console.log('fibonacci of 1:', fibonacci(1))
 console.log('fibonacci of 10:', fibonacci(10))
